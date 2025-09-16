@@ -3,6 +3,7 @@ from collections import defaultdict
 from typing import List, Tuple, Callable
 from aimakerspace.openai_utils.embedding import EmbeddingModel
 import asyncio
+from datetime import datetime, timezone
 
 
 def cosine_similarity(vector_a: np.array, vector_b: np.array) -> float:
@@ -17,9 +18,15 @@ class VectorDatabase:
     def __init__(self, embedding_model: EmbeddingModel = None):
         self.vectors = defaultdict(np.array)
         self.embedding_model = embedding_model or EmbeddingModel()
+        self.metadata = defaultdict(dict)
 
-    def insert(self, key: str, vector: np.array) -> None:
+    def insert(self, key: str, vector: np.array, filename: str) -> None:
         self.vectors[key] = vector
+        now_utc = datetime.now(timezone.utc)
+        self.metadata[key]['created_at'] = now_utc
+
+        if filename:
+            self.metadata[key]['filename'] = filename
 
     def search(
         self,
@@ -47,10 +54,10 @@ class VectorDatabase:
     def retrieve_from_key(self, key: str) -> np.array:
         return self.vectors.get(key, None)
 
-    async def abuild_from_list(self, list_of_text: List[str]) -> "VectorDatabase":
+    async def abuild_from_list(self, list_of_text: List[str], filename: str) -> "VectorDatabase":
         embeddings = await self.embedding_model.async_get_embeddings(list_of_text)
         for text, embedding in zip(list_of_text, embeddings):
-            self.insert(text, np.array(embedding))
+            self.insert(text, np.array(embedding), filename)
         return self
 
 
