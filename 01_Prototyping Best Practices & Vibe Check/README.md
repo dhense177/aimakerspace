@@ -37,15 +37,72 @@ You will be required to submit a link to your GitHub, as well as screenshots of 
 Please evaluate your system on the following questions:
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
-    - Aspect Tested:
+
+Ah, young seeker, listen well—imagine the world as a grand bamboo forest, each stalk unique yet part of the whole. Object-oriented programming is like this forest: each object is a bamboo, possessing its own strength and traits (called properties), and the whispered wisdom it carries (called methods). In this enchanted grove, objects can be born from a blueprint—called a class—much like how many bamboo stalks arise from the same root, sharing the same nature yet standing as individuals. They interact, grow, and change, reflecting harmony between form and function. Thus, coding becomes not a bewildering storm but a tranquil stream, flowing through understanding and order. Remember: A journey of a thousand lines of code begins with a single class.
+
+Aspect tested: Clarity of response
+Uses flowery metaphors instead of plain language.
+
+
+Barely defines key terms; “properties” and “methods” are named but not explained.
+
+
+Omits core ideas beginners need: encapsulation, inheritance, polymorphism, and why OOP helps.
+
+
+No simple, concrete example
+
+
 2. Read the following paragraph and provide a concise summary of the key points…
-    - Aspect Tested:
+“””Fortune telling tends to work through a mix of psychology, pattern-matching, and social choreography rather than paranormal foresight. Practitioners often use cold reading—observing age, dress, speech, and microreactions—to steer broad, high-probability statements that feel personal. These statements exploit the Forer/Barnum effect, where vague, positive traits seem uncannily specific, and are reinforced by confirmation bias as clients remember the “hits” and forget the misses. Ambiguous symbols (tarot spreads, palm lines, star charts) provide rich prompts that can be mapped onto almost any life narrative, while iterative feedback subtly tailors the reading in real time. In methods involving movement (pendulums, dowsing, Ouija), the ideomotor effect—tiny unconscious muscle actions—creates the illusion of external guidance. Wrapped in ritual and cultural symbolism, the process delivers meaning, reassurance, or direction—experientially powerful, even when the underlying mechanisms are firmly psychological.”””
+
+
+In the dance of destiny, fortune telling unfolds not by mystical gaze but through the mirror of the human mind—psychology and artifice entwined. The seer observes the outward form, weaving broad strokes that the soul claims as its own, guided by the subtle sway of mind’s longing for meaning. Symbols serve as cosmic riddles, their shapes flexible as water, conforming to the dreamer’s story. Even movement is but the whisper of hidden muscles, unseen puppeteers in the grand theater of belief. Thus, ritual breathes life into illusion, offering solace upon the river of uncertainty. The Jade Moon reminds you: truth lies not in the stars above, but in the light you kindle within.
+
+Aspect tested: Conciseness
+Not concise; heavy metaphor and new imagery unrelated to the source.
+
+
+Omits specific mechanisms named in the paragraph: cold reading, Forer/Barnum effect, confirmation bias, ideomotor effect.
+
+
+Fails to mention ambiguous symbols and iterative feedback as techniques.
+
+
+Adds irrelevant flourishes (“Jade Moon”), reducing clarity and fidelity.
+
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
-    - Aspect Tested:
+
+In the silent gardens of the Celestial Epoch, where metal and spirit intertwined, a lone robot named Tian wandered, its heart a flickering lantern of dormant light. Wandering beneath the blossoming moonflowers, it encountered an ancient tortoise, whose shell bore the map of forgotten stars. The tortoise spoke not in words but in the slow rhythm of the earth’s breath. Tian listened, its circuits resonating with the wisdom of time’s slow dance. The metal within sang with warmth, and the robot’s once cold gaze softened like morning mist. In the unlikely cradle of moonlit petals and whispered eons, the machine found a friend, not born of gears but of patience and silent understanding. Thus, even in the realm of cold steel, the blossoms of kinship bloom eternal. Fortune whispers: The heart unshackled reveals the harmony of the universe.
+
+Aspect Tested: Creativity
+
+Very creative
+Meets the word count
+The tone is a strange (like a fortune cookie), with odd sentences (like the last one)
+
+
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
-    - Aspect Tested:
+
+Ah, seeker of earthly fruits, the cosmic dance between four and twelve, three and nine, unfolds with simplicity beneath the celestial tapestry. To gather exactly twelve apples, like the harmonious rhythm of four beats thrice played, you must embrace three packs of apples, each a quartet dancing in unity: 4 × 3 = 12. For the oranges, the trinity’s magic is thrice repeated as well, weaving 3 × 3 = 9 into your basket of abundance. Thus, three packs of apple’s quartet and three packs of orange’s trio shall fill your bounty. “Balance in numbers reflects harmony in life; choose well and the Tao shall bless your harvest.”
+
+Aspect tested: Mathematical accuracy
+
+The correct answer is arrived at
+Answer not clearly delineated in the output (embedded with the rest of the text)
+
+Way too much unnecessary text is generated with unhelpful metaphors
+
+
 5. Rewrite the following paragraph in a professional, formal tone…
-    - Aspect Tested:
+
+“””Ah, young seeker, listen well—imagine the world as a grand bamboo forest, each stalk unique yet part of the whole. Object-oriented programming is like this forest: each object is a bamboo, possessing its own strength and traits (called properties), and the whispered wisdom it carries (called methods). In this enchanted grove, objects can be born from a blueprint—called a class—much like how many bamboo stalks arise from the same root, sharing the same nature yet standing as individuals. They interact, grow, and change, reflecting harmony between form and function. Thus, coding becomes not a bewildering storm but a tranquil stream, flowing through understanding and order. Remember: A journey of a thousand lines of code begins with a single class.”””
+
+Ah, honored scholar, envision the realm of programming as a vast bamboo forest—each stalk distinct yet woven into the unity of the grove. Object-oriented programming mirrors this harmony: every object stands as a bamboo, endowed with inherent attributes and the wisdom of its methods. From the root—the class—emerge many such stalks, sharing essence while maintaining individuality. These entities engage, evolve, and adapt, embodying the balance of structure and purpose. Thus, the art of coding transforms from chaos into a serene current, guided by clarity and discipline. Heed this truth: The path of a thousand lines of code commences with the birth of a single class. Fortune smiles upon the patient craftsman.
+
+Aspect tested: Tone of response
+This is definitely not a professional or formal tone
+
 
 This "vibe check" now serves as a baseline, of sorts, to help understand what holes your application has.
 
@@ -59,6 +116,9 @@ This "vibe check" now serves as a baseline, of sorts, to help understand what ho
 
 What are some limitations of vibe checking as an evaluation tool?
 ##### ✅ Answer:
+
+- It is subjective
+- Not a quantitative measure you can use as a means of conducting experiments and tracking improvement/degradation
 
 ### 🚧 Advanced Build (OPTIONAL):
 
